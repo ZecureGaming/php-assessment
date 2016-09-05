@@ -11,16 +11,17 @@ Now the users are given items, which can be of 4 types:
 
 In the future there will be more item types.
 
-1) design the SQL for saving items
-2) design API to add and remove items from users
-3) implement function exchange() in PHP which exchanges 5 free spins to 5 euros or vice versa
-4) How would you utilize Redis for caching?
+1. design the SQL for saving items
+2. design API to add and remove items from users
+3. implement function exchange() in PHP which exchanges 5 free spins to 5 euros or vice versa
+4. How would you utilize Redis for caching?
 
 ##2
 The public route rizk.com/spin/{wheelId} is executed in the function spinAction. The parameter wheelId is passed from uri as a raw string to the function.
 The route is called by client browser when a user spins his wheel of rizk.
 What problems do you find in the following design and implementation? 
 
+```
 class User {
     $id;  // stored to session
     public funtion getWheel($wheelId) {
@@ -52,3 +53,4 @@ public function spinAction($wheelId)
 
     return json(['success' => $success]);
 }
+```
