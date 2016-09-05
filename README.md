@@ -1,7 +1,7 @@
 #Rizk PHP assessment
 ##1
-You are handled a project which uses SQL, Redis and PHP.
-The users are stored in table "User" in SQL and there is basic PHP class User.
+You are handed a project which uses SQL, Redis and PHP.
+The users are stored in table "User" in SQL and there is a basic PHP class User.
 
 Now the users are given items, which can be of 4 types:
 1. 5 free spins
@@ -18,7 +18,7 @@ In the future there will be more item types.
 
 ##2
 The public route rizk.com/spin/{wheelId} is executed in the function spinAction. The parameter wheelId is passed from uri as a raw string to the function.
-The route is called by client browser when a user spins his wheel of rizk.
+The route is called by the client browser when a user spins his wheel of rizk.
 What problems do you find in the following design and implementation? 
 
 ```
